@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link id="head-favicon" rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link id="head-logo" rel="apple-touch-icon" />
+    <link id="head-manifest" rel="manifest" />
+    <title>React App</title>
+  </head>
+  <body>
+    <h1>Welcome to Snowpack!</h1>
+    <div id="root"></div>
+    <script type="module">
+      if ('%REACT_APP_RUNNING%' === 'true') {
+        document.getElementById('head-favicon').href = '%PUBLIC_URL%/favicon.ico'
+        document.getElementById('head-logo').href = '%PUBLIC_URL%/logo192.png'
+        document.getElementById('head-manifest').href = '%PUBLIC_URL%/manifest.json'
+      } else {
+        // Snowpack
+        import('../src/index.js')
+        document.getElementById('head-favicon').href = './public/favicon.ico'
+        document.getElementById('head-logo').href = './public/logo192.png'
+        document.getElementById('head-manifest').href = './public/manifest.json'
+      }
+    </script>
+  </body>
+</html>

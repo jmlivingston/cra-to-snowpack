@@ -15,15 +15,16 @@
     <div id="root"></div>
     <script type="module">
       if ('%REACT_APP_RUNNING%' === 'true') {
+        // create-react-app
         document.getElementById('head-favicon').href = '%PUBLIC_URL%/favicon.ico'
         document.getElementById('head-logo').href = '%PUBLIC_URL%/logo192.png'
         document.getElementById('head-manifest').href = '%PUBLIC_URL%/manifest.json'
       } else {
         // Snowpack
         import('../src/index.js')
-        document.getElementById('head-favicon').href = './public/favicon.ico'
-        document.getElementById('head-logo').href = './public/logo192.png'
-        document.getElementById('head-manifest').href = './public/manifest.json'
+        document.getElementById('head-favicon').href = './favicon.ico'
+        document.getElementById('head-logo').href = './logo192.png'
+        document.getElementById('head-manifest').href = './manifest.json'
       }
     </script>
   </body>

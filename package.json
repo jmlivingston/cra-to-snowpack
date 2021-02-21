@@ -42,6 +42,9 @@
     "baseOptions": {
       "baseUrl": "./"
     },
+    "buildOptions": {
+      "baseUrl": "/snowpack-react-doc-gen"
+    },
     "exclude": [
       "**/setupTests.js"
     ],

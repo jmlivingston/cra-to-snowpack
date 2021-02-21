@@ -1,4 +1,4 @@
-import React from "../_snowpack/pkg/react.js";
+import React from "../../_snowpack/pkg/react.js";
 import logo from "./logo.svg.proxy.js";
 import "./App.css.proxy.js";
 function App() {

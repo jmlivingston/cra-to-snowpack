@@ -63,8 +63,5 @@
     "plugins": [
       "@snowpack/plugin-react-refresh"
     ]
-  },
-  "bin": {
-    "cra-to-snowpack": "node cra-to-snowpack"
   }
 }

@@ -1,5 +1,10 @@
 # Add Snowpack to an existing create-react-app
 
+> TLDR: If you'd prefer to skip these steps, I've created a gist you can use or run with npx within an existing create-react-app:
+> `npx https://gist.github.com/jmlivingston/3516dbe71f2bcba17e41dd3fb44d1cfa`
+
+# Steps
+
 In order to add `Snowpack` support to an existing `create-react-app`, and mimic dev and build capabilities, use the following steps:
 
 - Install dev depdencies: `cross-env`, `snowpack`, and `@snowpack/plugin-react-refresh` (@snowpack/plugin-react-refresh is optional).

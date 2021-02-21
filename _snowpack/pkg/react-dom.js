@@ -351,5 +351,4 @@ function checkDCE() {
 }
 });
 
-var render$1 = reactDom.render;
-export { render$1 as render };
+export default reactDom;

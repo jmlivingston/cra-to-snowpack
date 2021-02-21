@@ -11,7 +11,7 @@ module.exports = {
       static: true,
     },
     src: {
-      url: isProd ? '/react-snowpack' : '/',
+      url: '/react-snowpack',
     },
   },
   plugins: ['@snowpack/plugin-react-refresh'],

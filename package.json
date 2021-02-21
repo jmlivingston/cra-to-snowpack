@@ -1,5 +1,5 @@
 {
-  "name": "react-snowpack4",
+  "name": "cra-to-snowpack",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -63,5 +63,8 @@
     "plugins": [
       "@snowpack/plugin-react-refresh"
     ]
+  },
+  "bin": {
+    "cra-to-snowpack": "node cra-to-snowpack"
   }
 }

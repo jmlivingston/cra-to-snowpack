@@ -23,7 +23,7 @@
     "eject": "react-scripts eject",
     "start-snowpack": "snowpack dev",
     "build-snowpack": "snowpack build",
-    "postbuild-snowpack": "node postbuild",
+    "postbuild-gh-pages": "node postbuild",
     "build-serve": "npx http-server build -o"
   },
   "eslintConfig": {

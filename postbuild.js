@@ -1,8 +1,6 @@
 const fs = require('fs')
 const path = require('path')
 
-const dest = process.argv.find((arg) => arg.includes('--dest=')).split('=')[1]
-
 const getFilesFolders = (dir) =>
   fs.readdirSync(dir).reduce((files, file) => {
     const name = path.join(dir, file)
@@ -25,6 +23,4 @@ function hackSvgProxyForGhPages() {
   })
 }
 
-if (dest === 'gh-pages') {
-  hackSvgProxyForGhPages()
-}
+hackSvgProxyForGhPages()

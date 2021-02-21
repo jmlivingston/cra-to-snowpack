@@ -16,7 +16,7 @@ function hackSvgProxyForGhPages() {
     if (file.includes('svg.proxy.js')) {
       let fileString = fs.readFileSync(file).toString()
       if (fileString.includes('export default "/dist/')) {
-        fileString = fileString.replace(/export default "\/dist/g, 'export default "/react-snowpack/dist')
+        fileString = fileString.replace(/export default "\/dist/g, 'export default "/cra-to-snowpack/dist')
         fs.writeFileSync(file, fileString)
       }
     }

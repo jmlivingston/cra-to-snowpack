@@ -17,7 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start-snowpack": "snowpack dev",
-    "build-snowpack": "snowpack build",
+    "build-snowpack-dev": "snowpack build --dest=dev",
+    "build-snowpack-prod": "snowpack build --dest=prod",
     "build-serve": "npx http-server build -o"
   },
   "eslintConfig": {
@@ -36,23 +37,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
-  },
-  "snowpack": {
-    "exclude": [
-      "**/setupTests.js"
-    ],
-    "mount": {
-      "public": {
-        "url": "/",
-        "static": true
-      },
-      "src": {
-        "url": "/"
-      }
-    },
-    "plugins": [
-      "@snowpack/plugin-react-refresh"
     ]
   },
   "devDependencies": {

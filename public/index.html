@@ -37,7 +37,7 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script type="module">
-      if ('%REACT_APP_MODE%' !== 'true') import('./index.js')
+      if ('%REACT_APP_MODE%' !== 'true') import('.%PUBLIC_URL%/dist/index.js')
     </script>
   </body>
 </html>

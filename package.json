@@ -48,7 +48,7 @@
         "static": true
       },
       "src": {
-        "url": "/dist"
+        "url": "/react-snowpack/dist"
       }
     },
     "plugins": [

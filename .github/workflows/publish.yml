@@ -14,7 +14,7 @@ jobs:
           node-version: '12.x'
       - run: yarn
       - run: yarn build-snowpack
-      - run: yarn posbuild-gh-pages
+      - run: yarn postbuild-gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

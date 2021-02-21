@@ -1,1 +1,1 @@
-export default "/react-snowpack/dist/logo.svg";
+export default "/cra-to-snowpack/dist/logo.svg";

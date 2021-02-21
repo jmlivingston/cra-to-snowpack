@@ -38,8 +38,7 @@
     -->
     <script type="module">
       if ('%REACT_APP_MODE%' !== 'true') {
-        const url = '%PUBLIC_URL%dist/index.js'
-        import(url)
+        import('%PUBLIC_URL%/dist/index.js')
       }
     </script>
   </body>

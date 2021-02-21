@@ -1,17 +1,20 @@
 {
   "scripts": {
-    "start": "snowpack dev --config scripts/snowpack/snowpack.config.js --open none --reload",
+    "start": "snowpack dev",
     "start-cra": "react-scripts start",
     "build-cra": "react-scripts build",
-    "build": "snowpack build",
-    "postbuild": "node scripts/snowpack/post-build.js",
+    "build": "snowpack build --reload",
     "build-serve": "npx http-server build -o",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@snowpack/plugin-react-refresh": "^2.4.0",
     "react-scripts": "^4.0.2",
-    "snowpack": "^3.0.1"
+    "snowpack": "3.0.11"
   },
   "browserslist": {
     "production": [
@@ -24,9 +27,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
   }
 }

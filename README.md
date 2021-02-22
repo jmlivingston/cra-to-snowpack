@@ -21,7 +21,7 @@ In order to add `Snowpack` support to an existing `create-react-app`, and mimic 
 npm i cross-env snowpack @snowpack/plugin-react-refresh -D
 ```
 
-> Note: `cross-env` is used to pass a variable and used in the `index.html` file to conditionally import Snowpack's entry point. While a `.env` file could be used, this won't work if Snowpack is consuming the same `.env`. Using `cross-env` ensures it is isolated only to `create-react-app` npm scripts.
+> Note: `cross-env` is used to pass a variable and used in the `index.html` file to conditionally import Snowpack's entry point so we can still use `create-react-app`. While a `.env` file could be used, this won't work if Snowpack is consuming the same `.env`. Using `cross-env` ensures it is isolated only to `create-react-app` npm scripts.
 
 ### 2. npm scripts
 
